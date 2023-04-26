@@ -1,0 +1,27 @@
+import logo from './logo.svg';
+import './App.css';
+
+function App() {
+  return (        
+    <> {/*<=== This is the opening of jsx syntax */}
+    <h1>Hi this is Lucifer</h1>            
+    <div className="App">   {/*We must always remember that we must return only one element in jsx and if we wnat to add something we must use jsx fragment i.e. "<>..</>" to enclose anything else */}
+      <header className="App-header"> {/*Here className is used because this is HTMl and "class" is reserved for JS and this also happens with other keywords like for and we use "htmlFor" */}
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React with Lucifer
+        </a>
+      </header>
+    </div>{/*This is the closing of jsx syntax ===> */} </>  
+  );
+}
+
+export default App;

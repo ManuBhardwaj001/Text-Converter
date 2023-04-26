@@ -1,0 +1,54 @@
+1.
+
+                                    ****index.html****
+2. index.html is the main file which renders everything
+
+
+                                    ******App.JS******
+1. App.js contains the javascript
+2. In App.JS className is used because this is HTMl and "class" is reserved for JS and this also happens with other keywords like for and we use "htmlFor in this
+3. There should be only one main element in App.js mean you should you enclose everything in jsx syntax i.e. <>..</>
+4. We can copy all the important components like navabar and buttons from BootStrap into App.js as an HTML element
+5. We can create other modules of javascript but in order to import from one module to another we must name them as .mjs instead of js & .mjs module1.mjs and module2.mjs are suitable examples
+
+
+        **Components**
+1. We can create a new folder for components so that all of stay at one place(it's optional)
+2. Name of components must always have first letter capital like "Navbar"
+3. We can create react function based components by rfc in any js module
+
+                                   ******BootStrap******
+1. Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains HTML, CSS and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.
+2. If we add BootStrap we can remove css(index.css) as it has css inside itself
+3. Always remember we must use className instead of class because "class" is reserved for JS here
+
+
+        **Props**
+1. Props stand for properties and we pass them in any functon.
+2. Props make components reusable by giving components the ability to receive data from their parent component in the form of props.
+3. After using props we can directly change properties of any element
+4. Ex: export default function Navbar(props)  <= Here we have passed prop in a function
+5. Ex: <a className="navbar-brand" href="/">{props.title}</a>   <= We can use props like this    
+
+
+        **Proptypes**
+1. Proptypes can be used to set type of prop so that you don't get errors later
+2. Navbar.propTypes = {title: PropTypes.string};  <= syntax
+3. isRequired is used to set the proptypes necessary and if we will not use it, it will give an error
+4. 2. Navbar.propTypes = {title: PropTypes.string.isRequired};  <= syntax
+
+
+        **Default Proptypes**
+1. Default Proptypes are set in case you forget to set the proptypes it will work in default
+2. Navbar.defaultProps = {title: 'Title Here'};   <= syntax
+
+
+       **Hooks**
+1. Hooks let you use state and other React features without writing a class.
+2. Ex: import React, { useState } from 'react';  <= useState is a hook here
+3. const [text, setText] = useState("Enter your text here"); <=later it'll be initalized like this
+
+
+       **State**
+1. State is a built-in React object that is used to contain data or information about the component. A component's state can change over time; whenever it changes, the component re-renders
+2. State is the local state of the component which cannot be accessed and modified outside of the component.
